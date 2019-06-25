@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flask-Embedded Bokeh Server - Jack Rory Staunton</title>
+  {{ js_resources|indent(4)|safe }}
+  {{ css_resources|indent(4)|safe }}
+</head>
+
+<body>
+  {{ script|safe }}
+  <div>
+    The interactive chart interface above is a Bokeh app served by a Bokeh server that has been embedded
+    in the Flask web app microframework. For more information see the section
+    <a  target="_blank" href="https://bokeh.pydata.org/en/latest/docs/user_guide/server.html#embedding-bokeh-server-as-a-library">Embedding Bokeh Server as a Library</a>
+    in the User's Guide. 
+  </div>
+  
+</body>
+</html>
